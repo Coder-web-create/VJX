@@ -1,0 +1,22 @@
+.para1{
+    background-color: #1ef;
+}
+.para2{
+    background-color: #a107a1;
+}
+.para3{
+    background-color: #ff0000;
+}
+.para4{
+    background-color: #fff01234;
+}
+.para5{
+    background-color: #def;
+}
+@media (min-width:801px){
+    .container p{
+        width: 50%;
+        display: flexbox;
+        padding: 20px;
+    }
+}

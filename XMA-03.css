@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppnis',sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.logo{
+    text-decoration: none;
+    font-size: 2.3em;
+    color:#fff;
+    letter-spacing: .1em;
+    font-weight: 700;
+    pointer-events: none;
+}
+.navbar a{
+    font-size: 20px;
+    text-decoration: none;
+    padding:0 10px;
+    font-variant: normal;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 40px;
+}
+.navbar .popup{
+    position: relative;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+}
+.navbar .popup::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background: #fff;
+    opacity: 0.85;
+}
+.section{
+    min-height: 100vh;
+    background-image: url(dragon2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.warpper{
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    top:0px;
+    right: 0;
+    background:transparent;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    opacity: 0;
+    pointer-events: none;
+}
+.warpper.active-btnpopup{
+    opacity: 1;
+    pointer-events: auto;
+}
+.warpper .icon-close{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.warpper .icon-close i{
+    font-size: 50px;
+    cursor: pointer;
+}
+.warpper .logreg-bx{
+    width: 100%;
+    height: 68vh;
+}
+.warpper .formbox-login{
+    display: block;
+}
+.warpper.active .formbox-login{
+    display: none;
+}
+.warpper.active .formbox-register{
+    display: block;
+}
+.warpper .formbox-register{
+    display: none;
+}
+.logreg-bx .logregx-title{
+   text-align: center;
+   margin-bottom: 40px;
+   color: #fff;
+   margin-top: 20px;
+}
+.logregx-title h2{
+    font-size: 32px;
+}
+.logregx-title p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.logreg-bx .input-box{
+    position: relative;
+    width: 450px;
+    height: 50px;
+    margin: 30px 20px;
+    border-bottom: 2px solid #fff;
+}
+.input-box input{
+    width:100% ;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 27px;
+}
+.input-box label{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s ease;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -2px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.logreg-bx .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    color: #fff;
+    font-size: 19.45px;
+}
+.logreg-bx .remember-forget input{
+    margin-left: 20px;
+}
+
+.logreg-bx .remember-forget a{
+    text-decoration: none;
+    margin-right:30px ;
+    color: #fff;
+}
+.logreg-bx .remember-forget a:hover{
+    text-decoration: underline;
+}
+.logreg-bx button{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    position: absolute;
+    left: 40px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+.logreg-bx .login-relink{
+    position:absolute;
+    bottom: 290px;
+    left: 100px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin:0  20px;
+}
+.logreg-bx .log-relink{
+    position:absolute;
+    bottom: 290px;
+    left: 100px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin:0  20px;
+}
+.logreg-bx .log-relink a{
+    color: #fff;
+    text-decoration: none;
+    font-variant: normal;
+}
+.logreg-bx .log-relink a:hover{
+    text-decoration: underline;
+}
+
+.logreg-bx .login-relink a{
+    color: #fff;
+    text-decoration: none;
+    font-variant: normal;
+}
+.logreg-bx .login-relink a:hover{
+    text-decoration: underline;
+}
+.logreg-bx .media-link{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.media-link a{
+    width: 100%;
+    margin:10px;
+    height: 50px;
+    border: 2px solid #fff;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0 ,0,0,.5);
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.media-link a:hover{
+    background: rgba(255,255,255,0.2);
+}
+.media-link a i{
+    font-size: 22px;
+    margin: 0 8px 2px 0;
+}
+.media-link a span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.formbox-register .terms{
+    color: #fff;
+    font-size: 18px;
+}
+.formbox-register .terms input{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.error{
+    position: absolute;
+    color: #fff;
+    font-size: 1em;
+    margin-top: 5px;
+}

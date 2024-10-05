@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="GER-04.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <nav class="side-bar" onclick="formVlaidation()">
+        <div class="logo-menu">
+            
+            <h2 class="logo">Codehal</h2>
+            <ion-icon name="menu" class="toggle-bt"></ion-icon>
+        </div>
+        <ul class="list">
+            <li class="list-items active">
+            <a href="#">
+                <ion-icon name="grid"></ion-icon>
+                <span class="link-name">Dashboard</span>
+                
+            </a>
+        </li>
+        </ul>
+        <ul class="list">
+            <li class="list-items">
+            <a href="#">
+                <ion-icon name="person"></ion-icon>
+                <span class="link-name" style="--i:1">User</span>
+            </a>
+            </li>
+        </ul>
+        <ul class="list">
+            <li class="list-items">
+            <a href="#">
+                <ion-icon name="chatbox-ellipses"></ion-icon>
+                <span class="link-name" style="--i:2">Messages</span>
+            </a>
+            </li>
+        </ul>
+        <ul class="list">
+            <li class="list-items">
+            <a href="#">
+                <ion-icon name="pie-chart"></ion-icon>
+                <span class="link-name" style="--i:3">Analytics</span>
+            </a>
+            </li>
+        </ul>
+        <ul class="list">
+            <li class="list-items">
+            <a href="#">
+                <ion-icon name="folder"></ion-icon>
+                <span class="link-name"style="--i:4">File Manager</span>
+            </a>
+            </li>
+        </ul>
+        <ul class="list">
+            <li class="list-items">
+            <a href="#">
+                <ion-icon name="bookmark"></ion-icon>
+                <span class="link-name"style="--i:5" >Saved</span>
+            </a>
+            </li>
+        </ul>
+        <ul class="list">
+            <li class="list-items">
+            <a href="#">
+                <ion-icon name="settings"></ion-icon>
+                <span class="link-name" style="--i:6">Settings</span>
+            </a>
+            </li>
+        </ul>
+
+    </nav>
+    <!--The End of the title bar and the navigator classes-->
+    <div class="container" >
+            <form action="#" id="Form" autocomplete="off" style="background-color:transparent" class="login">
+                <h2 class="logo">Login</h2>
+                <div class="input-box">
+                    <input type="text" name="user" id="user"  required>
+                    <label for="Username">User</label>
+                    <span><ion-icon name="person"></ion-icon></span>
+                    <div class="error" id="usererror"></div>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" id="password" required>
+                    <label for="password">Password</label>
+                    <span><ion-icon name="lock-closed"></ion-icon></span>
+                    <div class="error" id="passworderror"></div>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email</label>
+                    <span><ion-icon name="mail"></ion-icon></span>
+                    <div class="error" id="emailerror"></div>
+                </div>
+                <div class="remember-forget">
+                    <label for="Remeber"><input type="checkbox">Remember-me</label>
+                    <a href="#">forget-password</a>
+                </div>
+                <div class="popup">
+                <button type="submit">Register</button>
+                </div>
+                <div class="register-link">
+                    <p>Do you have an account ? <a href="#">Sign In</a></p>
+                </div>
+            </form>
+    </div>
+</body>
+<script src="GER-04.js"></script>
+<script src="GER-04(a).js"></script>
+</html>

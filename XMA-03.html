@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo</title>
+    <link rel="stylesheet" href="XMA-03.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">D-code</a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Help</a>
+            <a href="#">Contact</a>
+            <button class="popup" value="submit">login</button>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="warpper">
+            <span class="icon-close"><i class='bx bx-x' ></i></span>
+            <div class="logreg-bx">
+                <div class="formbox-login">
+                    <div class="logregx-title">
+                        <h2>login</h2>
+                        <p>Please login to use the platform</p>
+                    </div>
+                    <form action="" autocomplete="off" id="form1">
+                        <div class="input-box">
+                            <input type="email" id="email" name="email" required>
+                            <label for="">Email</label>
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <div class="error" id="usererror"></div>
+                        </div>
+                        <div class="input-box">
+                            <input type="paassword" id="password" name="password" required>
+                            <label for="">Password</label>
+                            <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                            <div class="error" id="passworderror"></div>
+                        </div>
+                        <div class="remember-forget">
+                            <label for=""><input type="checkbox">Remember me</label>
+                            <a href="">forget password</a>
+                        </div>
+                        <button type="submit" class="btn">login</button>
+                        <div class="login-relink">
+                            <p>Don't have a account ? <a href="#">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+                <!------Registration form-------->
+                <div class="formbox-register">
+                    <div class="logregx-title">
+                        <h2>Registration</h2>
+                        <p>Provide the following details to verify</p>
+                    </div>
+                    <form action="" autocomplete="off" id="form1">
+                        <div class="input-box">
+                            <input type="text" name="username" id="username" required>
+                            <label for="">Name</label>
+                            <span class="icon"><i class='bx bxs-user'></i></span>
+                            <div class="error" id="usererror"></div>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" id="email" name="email" required>
+                            <label for="">Email</label>
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <div class="error" id="emailerror"></div>
+                        </div>
+                        <div class="input-box">
+                            <input type="paassword" id="password" name="password" required>
+                            <label for="">Password</label>
+                            <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                            <div class="error" id="passworderror"></div>
+                        </div>
+                        <div class="terms">
+                            <label for=""><input type="checkbox">I agree to the terms and condtions</label>
+                        </div>
+                        <button type="submit" class="btn">Sign up</button>
+                        <div class="log-relink">
+                            <p>Already have an account ? <a href="#">login</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="media-link">
+                    <a href="#"><i class='bx bxl-google'></i><span>Login with Google</span></a>
+                    <a href="#"><i class='bx bxl-facebook-square'></i><span>Login with facebook</span></a>
+                    <a href="#"><i class='bx bxl-apple'></i><span>Login with apple</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="XMA-03.js"></script>
+<script src="XMA-03(a).js"></script>
+</html>
